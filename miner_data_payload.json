@@ -1,0 +1,13 @@
+{
+  "json": true,
+  "code": "goldmandgame",
+  "scope": "goldmandgame",
+  "table": "miners",
+  "lower_bound": "",
+  "upper_bound": "",
+  "index_position": 1,
+  "key_type": "",
+  "limit": "1000",
+  "reverse": false,
+  "show_payer": true
+}
