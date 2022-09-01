@@ -4,12 +4,13 @@ from win10toast import ToastNotifier
 toaster = ToastNotifier()
 
 print("Starting process please wait, may take a while.......")
+land_id = input("Enter your land id: ")
 
 def fetch_miners_on_land():
 	complete_raw_miner_data = fetch_complete_raw_miner_data()
 	miners_list = []
 	for raw_miner_data in complete_raw_miner_data:
-		if(raw_miner_data["data"]["land"]=="1099732772168"):
+		if(raw_miner_data["data"]["land"]==land_id):
 			miner_wallet = raw_miner_data["data"]["miner"]
 			miners_list.append(miner_wallet)
 	return miners_list
